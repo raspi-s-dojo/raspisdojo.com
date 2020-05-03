@@ -1,0 +1,30 @@
+{
+  "name": "raspisdojo.com",
+  "version": "1.0.0",
+  "description": "Raspi's Dojo Website built with Hugo",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hugo:build": "hugo --minify",
+    "hugo:server": "hugo server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raspi-s-dojo/raspisdojo.com.git"
+  },
+  "keywords": [
+    "website",
+    "raspisdojo",
+    "site",
+    "hugo"
+  ],
+  "author": "Eduardo Asenjo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raspi-s-dojo/raspisdojo.com/issues"
+  },
+  "homepage": "https://github.com/raspi-s-dojo/raspisdojo.com#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "postcss-cli": "^7.1.1"
+  }
+}
