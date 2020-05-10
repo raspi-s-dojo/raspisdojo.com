@@ -60,6 +60,12 @@ $navbar-dark-hover-border-bottom: 4px solid $white;
 
 .td-content {
 	> h1, h2, h3, h4, h5, h6 {
-        color: $white;
+		color: $white;
+	}
+
+	.highlight {
+        margin: 2rem 0;
+        padding: 1rem;
+        background-color: #0A121B !important;
     }
 }
