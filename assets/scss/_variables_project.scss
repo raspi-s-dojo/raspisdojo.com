@@ -12,6 +12,7 @@ $td-sidebar-bg-color: $docker-tree-dark;
 
 // Links colors
 $docker-link: #9cd7f7;
+$docker-link-active: #077cbc;
 
 // Nav bar colors
 
@@ -20,7 +21,7 @@ $navbar-dark-color: rgba($white, 1);
 $navbar-dark-hover-color: rgba($white, 0.75);
 $navbar-dark-active-color: $navbar-dark-color;
 
-$navbar-dark-active-border: 4px solid #077cbc;
+$navbar-dark-active-border: 4px solid $docker-link-active;
 
 body {
 	color: #b3b8ba !important;
