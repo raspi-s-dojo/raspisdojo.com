@@ -47,7 +47,7 @@
 		}
 
 		a {
-			color: $docker-link;
+			color: $link-color;
 		}
 	}
 
@@ -57,12 +57,12 @@
 
 		&__page {
 			font-size: 12px;
-			color: rgba($docker-link, 0.75);
+			color: $link-color;
 			font-weight: $font-weight-light;
 
 			&.active {
-				color: $docker-link-active;
-				border-left: 3px solid $docker-link-active;
+				color: $link-active-color;
+				border-left: 3px solid $link-active-color;
 				background-color: #0a151a;
 			}
 		}
@@ -70,7 +70,7 @@
 
 	a {
 		&:hover {
-			color: $blue;
+			color: $link-hover-color;
 			text-decoration: none;
 		}
 
@@ -83,7 +83,7 @@
 
 	.dropdown {
 		a {
-			color: $docker-link;
+			color: $link-color;
 		}
 
 		.nav-link {

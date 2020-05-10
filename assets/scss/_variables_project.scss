@@ -5,14 +5,16 @@ Add styles or override variables from the theme here.
 */
 
 // Theme colors
+$link-active-color: #077cbc;
+$link-color: #9cd7f7 !default;
 
 $primary: #27343b !default;
 $primary-light: lighten($primary, 75%) !default;
 $secondary: #0f4c75 !default;
-$success: #3772FF !default;
-$info: #C0E0DE !default;
-$warning: #ED6A5A !default;
-$danger: #ED6A5A !default;
+$success: #22bb33 !default;
+$info: $link-color !default;
+$warning: #f0ad4e !default;
+$danger: #bb2124 !default;
 
 $white: #fff;
 
@@ -20,22 +22,20 @@ $white: #fff;
 $td-sidebar-bg-color: #101e26;
 $code-bg-color: #0A121B !important;
 $code-color: #c1f1f0 !important;
+$blockquote-bg-color: #1f3341 !important;
+$blockquote-border-color: #1488C6;
 
 // Body bases
-$body-color: #b3b8ba;
+$body-color: #d3d4d4;
 $body-bg: #061f2f;
 $font-size-base: 0.875rem;
-
-// Links colors
-$docker-link: #9cd7f7;
-$docker-link-active: #077cbc;
 
 // Navbar
 $navbar-dark-color: $white !default;
 $navbar-dark-hover-color: rgba($white, 0.5) !default;
 $navbar-dark-active-color: $white !default;
 $navbar-dark-disabled-color: rgba($white, 0.25) !default;
-$navbar-dark-active-border-bottom: 4px solid $docker-link-active;
+$navbar-dark-active-border-bottom: 4px solid $link-active-color;
 $navbar-dark-hover-border-bottom: 4px solid $white;
 
 // NavBar White links against a dark background
@@ -82,12 +82,23 @@ $navbar-dark-hover-border-bottom: 4px solid $white;
     pre {
 		background-color: $code-bg-color;
 		color: $code-color;
-    }
+	}
 	
+	> blockquote {
+		padding: 10px 20px !important;
+		background-color: $blockquote-bg-color;
+		border-left: 6px solid $blockquote-border-color !important;
+		color: $body-color !important;
+    }
 
 }
 
 // pageinfo shortcode
 .pageinfo {
     background: $code-bg-color;
+}
+
+// alerts
+.alert {
+	background: $code-bg-color;
 }
