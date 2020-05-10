@@ -3,3 +3,44 @@
 Add styles or override variables from the theme here.
 
 */
+
+$primary: #273449;
+$secondary: #0f4c75;
+$docker-bg-color: #061f2f;
+$docker-tree-dark: #101e26;
+$td-sidebar-bg-color: $docker-tree-dark;
+
+// Links colors
+$docker-link: #9cd7f7;
+
+// Nav bar colors
+
+$white: #fff;
+$navbar-dark-color: rgba($white, 1);
+$navbar-dark-hover-color: rgba($white, 0.75);
+$navbar-dark-active-color: $navbar-dark-color;
+
+$navbar-dark-active-border: 4px solid #077cbc;
+
+body {
+	color: #b3b8ba !important;
+	background-color: $docker-bg-color !important;
+	font-size: 14px !important;
+}
+
+// NavBar White links against a dark background
+.navbar-dark {
+	.navbar-nav {
+		.show > .nav-link,
+		.active > .nav-link,
+		.nav-link.show,
+		.nav-link.active {
+			border-bottom: $navbar-dark-active-border;
+		}
+	}
+}
+// Left side bar
+
+.td-sidebar {
+	border: none;
+}

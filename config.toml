@@ -90,12 +90,12 @@ version = "0.0"
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
-url_latest_version = "https://example.com"
+url_latest_version = "https://raspisdojo.com/docs/"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/google/docsy-example"
+github_repo = "https://github.com/raspisdojo/raspisdojo.com"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/raspi-s-dojo"
+github_project_repo = "https://github.com/raspisdojo"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
@@ -129,14 +129,14 @@ footer_about_disable = false
 [params.ui.feedback]
 enable = true
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-yes = 'Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
-no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
+yes = 'Glad to hear it! Please <a href="https://github.com/raspisdojo/raspisdojo.com/issues/new">tell us how we can improve</a>.'
+no = 'Sorry to hear that. Please <a href="https://github.com/raspisdojo/raspisdojo.com/issues/new">tell us how we can improve</a>.'
 
 # Adds a reading time to the top of each doc.
 # If you want this feature, but occasionally need to remove the Reading time from a single page, 
 # add "hide_readingtime: true" to the page's front matter
 [params.ui.readingtime]
-enable = false
+enable = true
 
 [params.links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
@@ -149,7 +149,7 @@ enable = false
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
   name = "GitHub"
-  url = "https://github.com/raspi-s-dojo"
+  url = "https://github.com/raspisdojo"
   icon = "fab fa-github"
         desc = "Development takes place here!"
 [[params.links.developer]]
