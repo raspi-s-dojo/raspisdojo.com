@@ -4,30 +4,37 @@ Add styles or override variables from the theme here.
 
 */
 
-$primary: #273449;
-$secondary: #0f4c75;
-$docker-bg-color: #061f2f;
-$docker-tree-dark: #101e26;
-$td-sidebar-bg-color: $docker-tree-dark;
+// Theme colors
+
+$primary: #27343b !default;
+$primary-light: lighten($primary, 75%) !default;
+$secondary: #0f4c75 !default;
+$success: #3772FF !default;
+$info: #C0E0DE !default;
+$warning: #ED6A5A !default;
+$danger: #ED6A5A !default;
+
+$white: #fff;
+
+// UI element colors
+$td-sidebar-bg-color: #101e26;
+
+// Body bases
+$body-color: #b3b8ba;
+$body-bg: #061f2f;
+$font-size-base: 0.875rem;
 
 // Links colors
 $docker-link: #9cd7f7;
 $docker-link-active: #077cbc;
 
-// Nav bar colors
-
-$white: #fff;
-$navbar-dark-color: rgba($white, 1);
-$navbar-dark-hover-color: rgba($white, 0.75);
-$navbar-dark-active-color: $navbar-dark-color;
-
-$navbar-dark-active-border: 4px solid $docker-link-active;
-
-body {
-	color: #b3b8ba !important;
-	background-color: $docker-bg-color !important;
-	font-size: 14px !important;
-}
+// Navbar
+$navbar-dark-color: $white !default;
+$navbar-dark-hover-color: rgba($white, 0.5) !default;
+$navbar-dark-active-color: $white !default;
+$navbar-dark-disabled-color: rgba($white, 0.25) !default;
+$navbar-dark-active-border-bottom: 4px solid $docker-link-active;
+$navbar-dark-hover-border-bottom: 4px solid $white;
 
 // NavBar White links against a dark background
 .navbar-dark {
@@ -36,12 +43,15 @@ body {
 		.active > .nav-link,
 		.nav-link.show,
 		.nav-link.active {
-			border-bottom: $navbar-dark-active-border;
+			border-bottom: $navbar-dark-active-border-bottom !important;
+		}
+
+		.show > .nav-link,
+		.active > .nav-link,
+		.nav-link.show,
+		.nav-link:hover{
+			color: $navbar-dark-hover-color;
+			border-bottom: $navbar-dark-hover-border-bottom;
 		}
 	}
-}
-// Left side bar
-
-.td-sidebar {
-	border: none;
 }
