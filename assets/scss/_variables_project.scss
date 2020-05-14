@@ -103,3 +103,11 @@ $navbar-dark-hover-border-bottom: 4px solid $white;
 .alert {
 	background: $code-bg-color;
 }
+
+// Search input
+.td-search-input {
+    &.form-control:focus {
+		color: rgba($white, 0.8);
+		background: rgba($dark,0.2);
+    }
+}
