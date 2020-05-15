@@ -132,21 +132,6 @@ enable = true
 yes = 'Glad to hear it! Please <a href="https://github.com/raspisdojo/raspisdojo.com/issues/new">tell us how we can improve</a>.'
 no = 'Sorry to hear that. Please <a href="https://github.com/raspisdojo/raspisdojo.com/issues/new">tell us how we can improve</a>.'
 
-# Top-level navigation (horizontal)
-
-[[menu.main]]
-    name = "About"
-    weight = -103
-    url = "/docs/about/"
-[[menu.main]]
-    name = "Documentation"
-    weight = -101
-    url = "/docs/"
-[[menu.main]]
-    name = "Blog"
-    weight = -100
-    url = "/blog/"
-
 # Adds a reading time to the top of each doc.
 # If you want this feature, but occasionally need to remove the Reading time from a single page, 
 # add "hide_readingtime: true" to the page's front matter
