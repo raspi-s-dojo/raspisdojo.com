@@ -1,9 +1,9 @@
 ---
-title: "Reference"
-linkTitle: "Reference"
-weight: 9
+title: "Projects"
+linkTitle: "Projects"
+weight: 3
 description: >
-  Low level reference docs for your project.
+  All our current and completed projects
 ---
 
 {{% pageinfo %}}

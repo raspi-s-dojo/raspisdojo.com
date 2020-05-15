@@ -132,6 +132,21 @@ enable = true
 yes = 'Glad to hear it! Please <a href="https://github.com/raspisdojo/raspisdojo.com/issues/new">tell us how we can improve</a>.'
 no = 'Sorry to hear that. Please <a href="https://github.com/raspisdojo/raspisdojo.com/issues/new">tell us how we can improve</a>.'
 
+# Top-level navigation (horizontal)
+
+[[menu.main]]
+    name = "About"
+    weight = -103
+    url = "/docs/about/"
+[[menu.main]]
+    name = "Documentation"
+    weight = -101
+    url = "/docs/"
+[[menu.main]]
+    name = "Blog"
+    weight = -100
+    url = "/blog/"
+
 # Adds a reading time to the top of each doc.
 # If you want this feature, but occasionally need to remove the Reading time from a single page, 
 # add "hide_readingtime: true" to the page's front matter
@@ -148,12 +163,17 @@ enable = true
 
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
+  name = "Gitter"
+  url = "https://gitter.im/raspi-s-Dojo"
+  icon = "fab fa-gitter"
+        desc = "Chat with other project developers"
+[[params.links.developer]]
   name = "GitHub"
   url = "https://github.com/raspisdojo"
   icon = "fab fa-github"
         desc = "Development takes place here!"
 [[params.links.developer]]
-  name = "Gitter"
-  url = "https://gitter.im/raspi-s-Dojo"
-  icon = "fab fa-gitter"
-        desc = "Chat with other project developers"
+  name = "Twitter"
+  url = "https://twitter.com/raspisdojo"
+  icon = "fab fa-twitter"
+        desc = "Follow us!"
