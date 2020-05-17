@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/raspi-s-dojo/raspisdojo.com.git"
+    "url": "git+https://github.com/raspisdojo/raspisdojo.com.git"
   },
   "keywords": [
     "website",
@@ -20,9 +20,9 @@
   "author": "Eduardo Asenjo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/raspi-s-dojo/raspisdojo.com/issues"
+    "url": "https://github.com/raspisdojo/raspisdojo.com/issues"
   },
-  "homepage": "https://github.com/raspi-s-dojo/raspisdojo.com#readme",
+  "homepage": "https://github.com/raspisdojo/raspisdojo.com#readme",
   "devDependencies": {
     "autoprefixer": "^9.7.6",
     "postcss-cli": "^7.1.1"
