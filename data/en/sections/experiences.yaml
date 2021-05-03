@@ -1,0 +1,38 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Pexlify Ltd.
+    url: "https://pexlify.com"
+    location: Dublin, Ireland.
+    # company overview
+    overview: Pexlify Ltd. is a Platinum Salesforce Partner... TBD
+  positions:
+  - designation: Technical Lead
+    start: Dec 2018
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - TBD
+
+- company:
+    name: 3nitram
+    url: "https://3nitram.com"
+    location: Madird, Spain
+    overview: Boutique Salesforce Partner TBD
+  positions:
+  - designation: Salesforce Developer & Consultant
+    start: Dec 2015
+    end: Nov 2018
+    responsibilities:
+    - Developer & Designer of main Projects

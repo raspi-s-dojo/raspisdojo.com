@@ -1,0 +1,38 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: Salesforce OOTB tools
+  icon: "/images/sections/skills/kubernetes.png"
+  summary: "TBD"
+  url: "https://salesforce.com/"
+
+- name: LWC
+  icon: "/images/sections/skills/go.png"
+  summary: "TBD"
+  url: "https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.get_started_introduction"
+
+- name: Docker
+  icon: "/images/sections/skills/cloud.png"
+  summary: "Write most of the programs as dockerized container. Experienced with multiple services and docker-compose."
+
+- name: Linux
+  icon: "/images/sections/skills/cloud.png"
+  summary: "Using as my main operating system. Capable of writing bash/shell scripts. Running Manjaro right now!"
+
+- name: Git
+  icon: "/images/sections/skills/cloud.png"
+  summary: "Experienced with git-based development and sfdx source-driven development."
+
+- name: DevOps
+  icon: "/images/sections/skills/cloud.png"
+  summary: "TBD"

@@ -1,0 +1,42 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Salesforce Technical Lead
+# your company information
+company:
+  name: Pexlify Ltd.
+  url: "https://pexlify.com"
+
+# your resume. this file path should be relative to you "static" directory
+# resume: "files/resume.pdf"
+
+# a summary about you
+summary: 'I am a passionate Salesforce Developer & Technical Lead with 6 years of working experience in the Salesforce environment. I build OSS tools for Salesforce like sfdx plugins, Docker images for CI/CD and small packaged solutions. My tools help people to make easier their development process. Sometimes, I work on some fun projects such as small LWC, utils, etc.'
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+- name: Github
+  icon: "fab fa-github"
+  url: "https://www.github.com/raspikabek"
+
+# your soft skills
+# give the percentage between 50 to 100 with 5 intervals.
+# currently supported colors: blue, yellow, pink, green, sky, orange
+softSkills:
+- name: LWC
+  percentage: 85
+  color: blue
+- name: Apex
+  percentage: 75
+  color: yellow
+- name: Team Work
+  percentage: 90
+  color: green
