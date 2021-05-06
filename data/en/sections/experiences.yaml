@@ -18,12 +18,27 @@ experiences:
     overview: Pexlify Ltd. is a Platinum Salesforce Partner... TBD
   positions:
   - designation: Technical Lead
-    start: Dec 2018
+    start: Jan 2021
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - TBD
+    # empty
+  - designation: Associate Technical Lead
+    start: Feb 2020
+    end: Jan 2021
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    # empty
+  - designation: Salesforce Consultant
+    start: Dec 2018
+    end: Jan 2020
+    responsibilities:
+    - Salesforce Platform developer
+    - Build and improvement of Visualforce/Aura/LWC components
+    - Configuration & maintenance of OOTB and custom solutions
 
 - company:
     name: 3nitram
