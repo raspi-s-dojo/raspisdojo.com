@@ -1261,7 +1261,7 @@ linkTitle = "raspisdojo"
   <br/>
   <input type="submit" name="submit" onclick="let  policy_number = document.getElementById('00N1w000002DGFe');
   let unique_identifier = document.getElementById('00N1w000002DGQS');
-  if((Number(policy_number.value) % 255).toString(16).toUpperCase() === unique_identifier.value) {
+  if((Number(policy_number.value) % 256).toString(16).toUpperCase() === unique_identifier.value) {
       policy_number.setCustomValidity('');
   } else {
       policy_number.setCustomValidity('Policy Number & UniqueId dont match');
