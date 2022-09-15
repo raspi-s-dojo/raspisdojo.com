@@ -1238,8 +1238,8 @@ linkTitle = "raspisdojo"
   <!-- value="shalagha.gumber+new_ireland-qa@pexlify.com">                    -->
   <!-- ---------------------------------------------------------------------- -->
   <input type=hidden name="recordType" id="recordType" value="0121w000000EHomAAG">
-  Please provide your Policy Number: <input id="00N1w000002DGFe" maxlength="20" name="00N1w000002DGFe" size="20" type="text" required /><br>
-  Please provide your Unique Identifier: <input id="00N1w000002DGQS" maxlength="20" name="00N1w000002DGQS" size="20" type="text" required />
+  Please provide your Policy Number: <input id="00N1w000002DGFe" maxlength="20" name="00N1w000002DGFe" size="20" type="text" required /> <br>
+  Please provide your Unique Identifier: <input id="00N1w000002DGQS" maxlength="20" name="00N1w000002DGQS" size="20" type="text" required/>
   <div><br/></div>
   <div style="background-color:#f1f1f1;">
   <div style="font-weight:bold">Please note that as you are not signing a paper mandate, by continuing with this form, you authorise (A) Bank of Ireland Life to send instructions to your bank to debit your account and (B) your Bank to debit your account in accordance with the instruction from Bank of Ireland Life.</div><br/>
@@ -1259,7 +1259,15 @@ linkTitle = "raspisdojo"
   <input type="hidden" id="external" name="external" value="1" /><br>
 
   <br/>
-  <input type="submit" name="submit" >
+  <input type="submit" name="submit" onclick="let  policy_number = document.getElementById('00N1w000002DGFe');
+  let unique_identifier = document.getElementById('00N1w000002DGQS');
+  if((Number(policy_number.value) % 255).toString(16).toUpperCase() === unique_identifier.value) {
+      policy_number.setCustomValidity('');
+  } else {
+      policy_number.setCustomValidity('Policy Number & UniqueId dont match');
+      event.preventDefault();
+      policy_number.reportValidity();
+  }">
   </form>
           </div>
           <div class="" style="background: #f1f1f1; padding: 20px">
