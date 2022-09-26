@@ -1216,7 +1216,7 @@ linkTitle = "raspisdojo"
       <div class="content-sidebar-wrap">
         <main class="content">
           <div style="background-color: lightgray; padding: 1rem">
-            <h2>Web to case Proof of Content -- Connected to QA environment</h2>
+            <h2>Web to case Proof of Content -- Connected to ENV2 environment</h2>
             <!-- ---------------------------------------------------------------------- -->
 <!-- NOTE: Please add the following <META> element to your page <HEAD>.     -->
 <!-- If necessary, please modify the charset parameter to specify the       -->
@@ -1260,8 +1260,10 @@ linkTitle = "raspisdojo"
 
   <br/>
   <input type="submit" name="submit" onclick="let  policy_number = document.getElementById('00N0D000001ebjH');
+  let policy_hex_value = (Number(policy_number.value) % 256).toString(16).toUpperCase();
+  if (policy_hex_value.length === 1) policy_hex_value = '0' + policy_hex_value;
   let unique_identifier = document.getElementById('00N0D000001ebjI');
-  if((Number(policy_number.value) % 256).toString(16).toUpperCase() === unique_identifier.value) {
+  if(policy_hex_value === (unique_identifier.value).slice(0,2)) {
       policy_number.setCustomValidity('');
   } else {
       policy_number.setCustomValidity('Your Policy Number and Unique Identifier do not match an account on record');
