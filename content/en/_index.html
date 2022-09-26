@@ -1226,9 +1226,9 @@ linkTitle = "raspisdojo"
   <!-- ---------------------------------------------------------------------- -->
   <!-- NOTE: Please add the following <FORM> element to your page.            -->
   <!-- ---------------------------------------------------------------------- -->
-  <form action="https://niac--qa.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+  <form action="https://niac-prod--env2full.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
   <div style="font-weight:bold">Welcome to Bank of Ireland Life's Secure Portal for customer to update their direct debit details. Please complete the following pages in order to amend your details. Please note that requests will be processed on next appropriate business working day in line with your billing date.</div><br/>
-  <input type=hidden name="orgid" value="00D1w0000008iGy">
+  <input type=hidden name="orgid" value="00D0D000000CwQe">
   <input type=hidden name="retURL" value="https://test.raspisdojo.com/thankyou">
   <!-- ---------------------------------------------------------------------- -->
   <!-- NOTE: These fields are optional debugging elements. Please uncomment   -->
@@ -1237,34 +1237,34 @@ linkTitle = "raspisdojo"
   <!-- <input type="hidden" name="debugEmail"                                 -->
   <!-- value="shalagha.gumber+new_ireland-qa@pexlify.com">                    -->
   <!-- ---------------------------------------------------------------------- -->
-  <input type=hidden name="recordType" id="recordType" value="0121w000000EHomAAG">
-  Please provide your Policy Number: <input id="00N1w000002DGFe" maxlength="20" name="00N1w000002DGFe" size="20" type="text" required /> <br>
-  Please provide your Unique Identifier: <input id="00N1w000002DGQS" maxlength="20" name="00N1w000002DGQS" size="20" type="text" required/>
+  <input type=hidden name="type" id="type" value="DDM_Form">
+  Please provide your Policy Number: <input id="00N0D000001ebjH" maxlength="20" name="00N0D000001ebjH" size="20" type="text" required /> <br>
+  Please provide your Unique Identifier: <input id="00N0D000001ebjI" maxlength="20" name="00N0D000001ebjI" size="20" type="text" required/>
   <div><br/></div>
   <div style="background-color:#f1f1f1;">
   <div style="font-weight:bold">Please note that as you are not signing a paper mandate, by continuing with this form, you authorise (A) Bank of Ireland Life to send instructions to your bank to debit your account and (B) your Bank to debit your account in accordance with the instruction from Bank of Ireland Life.</div><br/>
   <div style="font-weight:bold">As part of your rights, you are entitled to a refund from your bank under the terms and conditions of your agreement with your bank. A refund must be claimed within 8 weeks starting from the date on which your account was debited. Your rights are explained in a statement that you can obtain from your bank”.
   Bank of Ireland Life, 5-9 South Frederick Street, Dublin 2.</div><br/>
   <div style="font-weight:bold">Bank of Ireland Life is a trading name of New Ireland Assurance Company plc. New Ireland Assurance Company plc. trading as Bank of Ireland Life is regulated by the Central Bank of Ireland. A member of Bank of Ireland Group.</div><br/>
-  Agree: <input id="00N1w000002DGQh" name="00N1w000002DGQh" type="checkbox" value="1" required oninvalid="this.setCustomValidity('The box must be checked to continue')" oninput="this.setCustomValidity('')" /><br/>
+  Agree: <input id="00N0D000001ebjD" name="00N0D000001ebjD" type="checkbox" value="1" required oninvalid="this.setCustomValidity('The box must be checked to continue')" oninput="this.setCustomValidity('')" /><br/>
   </div><br/>
-  Bank Account Holder Name: <input id="00N1w000002DGQm" maxlength="255" name="00N1w000002DGQm" size="20" type="text" required /><br>
-  New IBAN: <input id="00N1w000002DGQr" maxlength="32" name="00N1w000002DGQr" size="32" type="text" required pattern="^(?:(?:IT|SM)\d{2}[A-Z]\d{22}|CY\d{2}[A-Z]\d{23}|NL\d{2}[A-Z]{4}\d{10}|LV\d{2}[A-Z]{4}\d{13}|(?:BG|BH|GB|IE)\d{2}[A-Z]{4}\d{14}|GI\d{2}[A-Z]{4}\d{15}|RO\d{2}[A-Z]{4}\d{16}|KW\d{2}[A-Z]{4}\d{22}|MT\d{2}[A-Z]{4}\d{23}|NO\d{13}|(?:DK|FI|GL|FO)\d{16}|MK\d{17}|(?:AT|EE|KZ|LU|XK)\d{18}|(?:BA|HR|LI|CH|CR)\d{19}|(?:GE|DE|LT|ME|RS)\d{20}|IL\d{21}|(?:AD|CZ|ES|MD|SA)\d{22}|PT\d{23}|(?:BE|IS)\d{24}|(?:FR|MR|MC)\d{25}|(?:AL|DO|LB|PL)\d{26}|(?:AZ|HU)\d{27}|(?:GR|MU)\d{28})$" oninvalid="this.setCustomValidity('Please confirm your New IBAN number')" oninput="this.setCustomValidity('');let p = this.selectionStart; this.value = this.value.toUpperCase();this.setSelectionRange(p, p); " /><br>
-  New BIC: <input id="00N1w000002DGR1" maxlength="11" name="00N1w000002DGR1" size="15" type="text" required pattern="([a-zA-Z]{4})([a-zA-Z]{2})(([2-9a-zA-Z]{1})([0-9a-np-zA-NP-Z]{1}))((([0-9a-wy-zA-WY-Z]{1})([0-9a-zA-Z]{2}))|([xX]{3})|)" /><br>
-  Please confirm that the bank account belongs to the existing payee: <input id="00N1w000002DGRQ" name="00N1w000002DGRQ" type="checkbox" value="1" required oninvalid="this.setCustomValidity('Please confirm the new account is held by the existing payee')" oninput="this.setCustomValidity('')" /><br>
-  Is the new account a jointly held account?: <select id="00N1w000002DGRV" name="00N1w000002DGRV" title="Is the new account a jointly held account?" required oninvalid="this.setCustomValidity('Please confirm if account is jointly held')" oninput="this.setCustomValidity('');var select = document.getElementById('00N1w000002DGRV');var value = select.options[select.selectedIndex].value;var inputElement = document.getElementById('00N1w000002DGRa');if(value == 'Yes'){inputElement.setAttribute('required', '');}else{inputElement.removeAttribute('required', '');inputElement.setCustomValidity('');}" ><option value="">--None--</option><option value="Yes">Yes</option>
+  Bank Account Holder Name: <input id="00N0D000001ebjF" maxlength="255" name="00N0D000001ebjF" size="20" type="text" required /><br>
+  New IBAN: <input id="00N0D000001ebjL" maxlength="32" name="00N0D000001ebjL" size="32" type="text" required pattern="^(?:(?:IT|SM)\d{2}[A-Z]\d{22}|CY\d{2}[A-Z]\d{23}|NL\d{2}[A-Z]{4}\d{10}|LV\d{2}[A-Z]{4}\d{13}|(?:BG|BH|GB|IE)\d{2}[A-Z]{4}\d{14}|GI\d{2}[A-Z]{4}\d{15}|RO\d{2}[A-Z]{4}\d{16}|KW\d{2}[A-Z]{4}\d{22}|MT\d{2}[A-Z]{4}\d{23}|NO\d{13}|(?:DK|FI|GL|FO)\d{16}|MK\d{17}|(?:AT|EE|KZ|LU|XK)\d{18}|(?:BA|HR|LI|CH|CR)\d{19}|(?:GE|DE|LT|ME|RS)\d{20}|IL\d{21}|(?:AD|CZ|ES|MD|SA)\d{22}|PT\d{23}|(?:BE|IS)\d{24}|(?:FR|MR|MC)\d{25}|(?:AL|DO|LB|PL)\d{26}|(?:AZ|HU)\d{27}|(?:GR|MU)\d{28})$" oninvalid="this.setCustomValidity('Please confirm your New IBAN number')" oninput="this.setCustomValidity('');let p = this.selectionStart; this.value = this.value.toUpperCase();this.setSelectionRange(p, p); " /><br>
+  New BIC: <input id="00N0D000001ebjK" maxlength="11" name="00N0D000001ebjK" size="15" type="text" required pattern="([a-zA-Z]{4})([a-zA-Z]{2})(([2-9a-zA-Z]{1})([0-9a-np-zA-NP-Z]{1}))((([0-9a-wy-zA-WY-Z]{1})([0-9a-zA-Z]{2}))|([xX]{3})|)" /><br>
+  Please confirm that the bank account belongs to the existing payee: <input id="00N0D000001ebjG" name="00N0D000001ebjG" type="checkbox" value="1" required oninvalid="this.setCustomValidity('Please confirm the new account is held by the existing payee')" oninput="this.setCustomValidity('')" /><br>
+  Is the new account a jointly held account?: <select id="00N0D000001ebjJ" name="00N0D000001ebjJ" title="Is the new account a jointly held account?" required oninvalid="this.setCustomValidity('Please confirm if account is jointly held')" oninput="this.setCustomValidity('');var select = document.getElementById('00N1w000002DGRV');var value = select.options[select.selectedIndex].value;var inputElement = document.getElementById('00N1w000002DGRa');if(value == 'Yes'){inputElement.setAttribute('required', '');}else{inputElement.removeAttribute('required', '');inputElement.setCustomValidity('');}" ><option value="">--None--</option><option value="Yes">Yes</option>
   <option value="No">No</option>
   </select><br>
-  If this is a joint account, please tick here to confirm all parties agree to this account amendment: <input id="00N1w000002DGRa" name="00N1w000002DGRa" type="checkbox" value="1" required oninvalid="this.setCustomValidity('Please confirm all parties have agreed to the direct debit change')" oninput="this.setCustomValidity('')"/><br>
+  If this is a joint account, please tick here to confirm all parties agree to this account amendment: <input id="00N0D000001ebjE" name="00N0D000001ebjE" type="checkbox" value="1" required oninvalid="this.setCustomValidity('Please confirm all parties have agreed to the direct debit change')" oninput="this.setCustomValidity('')"/><br>
   <input type="hidden" id="external" name="external" value="1" /><br>
 
   <br/>
-  <input type="submit" name="submit" onclick="let  policy_number = document.getElementById('00N1w000002DGFe');
-  let unique_identifier = document.getElementById('00N1w000002DGQS');
+  <input type="submit" name="submit" onclick="let  policy_number = document.getElementById('00N0D000001ebjH');
+  let unique_identifier = document.getElementById('00N0D000001ebjI');
   if((Number(policy_number.value) % 256).toString(16).toUpperCase() === unique_identifier.value) {
       policy_number.setCustomValidity('');
   } else {
-      policy_number.setCustomValidity('Policy Number & UniqueId dont match');
+      policy_number.setCustomValidity('Your Policy Number and Unique Identifier do not match an account on record');
       event.preventDefault();
       policy_number.reportValidity();
   }">
